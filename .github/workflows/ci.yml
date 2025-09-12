@@ -37,7 +37,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/satellite-app
-            docker pull $IMAGE_NAME:latest
-            docker stop satellite-app || true
-            docker rm satellite-app || true
-            docker run -d --name satellite-app -p 8080:8080 $IMAGE_NAME:latest
+            sudo docker pull $IMAGE_NAME:latest
+            sudo docker stop satellite-app || true
+            sudo docker rm satellite-app || true
+            sudo docker run -d --name satellite-app -p 8080:8080 $IMAGE_NAME:latest
