@@ -1,0 +1,16 @@
+run:
+  timeout: 5m
+  skip-dirs-use-default: true
+
+linters:
+  enable:
+    - govet
+    - gofmt
+    - goimports
+    - errcheck
+    - staticcheck
+    - unused
+    - ineffassign
+
+issues:
+  exclude-use-default: false
