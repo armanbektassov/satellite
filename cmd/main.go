@@ -12,7 +12,10 @@ func main() {
 	signal.Notify(done, os.Interrupt)
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "OK")
+		_, err := fmt.Fprintln(w, "OK")
+		if err != nil {
+			return
+		}
 	})
 
 	go func() {
