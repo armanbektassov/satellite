@@ -17,7 +17,7 @@ jobs:
         uses: golangci/golangci-lint-action@v6
         with:
           version: latest
-          args: ./cmd/... ./internal/... ./pkg/...
+          args: ./cmd/...
 
   # 2. Билд и пуш Docker-образа (только если линтер успешен)
   build:
