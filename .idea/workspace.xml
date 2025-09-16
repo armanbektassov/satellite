@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="773ddf81-21fe-41e2-868c-907b5e25fdd4" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+    <list default="true" id="773ddf81-21fe-41e2-868c-907b5e25fdd4" name="Changes" comment="update CI configuration to use sudo for Docker commands and change exposed port to 8080">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="update CI configuration for Docker deployment and add Dockerfile" />
+    <MESSAGE value="update go.mod to require only github.com/joho/godotenv v1.5.1 and add go.sum" />
+    <MESSAGE value="update Dockerfile to use golang:1.23-alpine as the base image" />
+    <MESSAGE value="update CI configuration to use sudo for Docker commands and change exposed port to 8080" />
+    <option name="LAST_COMMIT_MESSAGE" value="update CI configuration to use sudo for Docker commands and change exposed port to 8080" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
